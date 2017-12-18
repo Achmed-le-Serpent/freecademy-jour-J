@@ -27,7 +27,7 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Free School</h1>
-            <h2>Echangez votre savoir</h2>
+            <h2 style="color: white;">Echangez votre savoir</h2>
             <h3><%= form_tag courses_path, :method => 'get' do %>
 <%= text_field_tag :RECHERCHER, params[:search] %>
 <%= submit_tag "Search" %>
@@ -50,13 +50,13 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div >
                 <h2 class="heading"><center>Freeschool</center></h2>
                 </div>
                 <div class="col-md-8">
-                    <p><justify> 
+                    <p><justify>
                        Bienvenue sur FreeSchool, votre plateforme de partage d'échange de vie étudiante.          Vous avez acces à tous types de documents universitaires (notes, dissertations,commentaires, fiches de révision..).
-                    </justify></p></h2>
+                    </justify></p>
 
                 <h2 class="heading"><center>42</center></h2>
                 </div>

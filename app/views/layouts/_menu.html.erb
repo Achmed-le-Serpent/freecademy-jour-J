@@ -41,15 +41,11 @@
       </li>
 
       <li>
-        <%= link_to "Profil", users_path, style: "color: black;"%>
-      </li>
-
-      <li>
         <%= current_user.email %>
       </li>
 
       <li>
-        <%= link_to "Edit account", edit_user_registration_path, style: "color: black;"%>
+        <%= link_to "Profil", edit_user_registration_path, style: "color: black;"%>
       </li>
 
       <% else %>
