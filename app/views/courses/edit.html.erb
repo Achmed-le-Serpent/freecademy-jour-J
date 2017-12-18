@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <div class="light-well">
+        <h2 class="page-header text-center">Modifies ton document</h2>
+
+<div class="well">
+
+<%= render 'form', course: @course %>
+
+<center>
+	<%= link_to 'Show', @course, class: "btn btn-primary"%>
+	<%= link_to 'Back', courses_path, class: "btn btn-primary"%>
+</center>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<%= button_to "Delete", @course, class: "btn btn-danger", method: :delete %>
