@@ -13,23 +13,23 @@
 
     <ul id="menu" class="shadow">
       <li>
-        <%= link_to "Accueil", homes_path %>
+        <%= link_to "Accueil", homes_path, style: "color: black;"%>
       </li>
 
       <li>
-        <%= link_to "Cours", courses_path %>
+        <%= link_to "Cours", courses_path, style: "color: black;"%>
       </li>
 
       <li>
-        <%= link_to "Messagerie", users_path %>
+        <%= link_to "Messagerie", users_path, style: "color: black;"%>
       </li>
 
       <li>
-        <a href="homes#contact">Contact</a>
+        <a href="homes#contact" style="color: black;">Contact</a>
       </li>
 
       <li>            
-        <%= link_to "Poster un cours", new_course_path %>
+        <%= link_to "Poster un cours", new_course_path, style: "color: black;" %>
       </li>
     </ul>
 
@@ -37,11 +37,11 @@
       <% if user_signed_in? %>
 
       <li>
-        <%= link_to "Se deconnecter", destroy_user_session_path, method: :delete %>
+        <%= link_to "Se deconnecter", destroy_user_session_path, method: :delete, style: "color: black;"%>
       </li>
 
       <li>
-        <%= link_to "Profil", users_path %>
+        <%= link_to "Profil", users_path, style: "color: black;"%>
       </li>
 
       <li>
@@ -49,21 +49,21 @@
       </li>
 
       <li>
-        <%= link_to "Edit account", edit_user_registration_path %>
+        <%= link_to "Edit account", edit_user_registration_path, style: "color: black;"%>
       </li>
 
       <% else %>
 
       <li>
-        <%= link_to "S'inscrire", new_user_registration_path %>
+        <%= link_to "S'inscrire", new_user_registration_path, style: "color: black;"%>
       </li>
 
       <li>
-        <%= link_to "Se connecter", new_user_session_path %>
+        <%= link_to "Se connecter", new_user_session_path, style: "color: black;"%>
       </li>
 
       <li>
-        <%= link_to "Se connecter via facebook", user_facebook_omniauth_authorize_path %>
+        <%= link_to "Se connecter via facebook", user_facebook_omniauth_authorize_path, style: "color: black;"%>
       </li>
 
       <% end %>
